@@ -1,0 +1,118 @@
+ export const signImages = [{
+  id: 0, 
+  category: 'hand-',
+  url: 'fist-3',
+  configuration: 'S',
+}, {
+  id: 1, 
+  category: 'hand-',
+  url: 'index-1',
+  configuration: 'G',
+}, {
+  id: 2, 
+  category: 'hand-',
+  url: 'index-3',
+  configuration: '1',
+}, {
+  id: 3, 
+  category: 'hand-',
+  url: 'middle-index-3',
+  configuration: 'U',
+}, {
+  id: 4, 
+  category: 'hand-',
+  url: 'middle-index-crossed-3',
+  configuration: 'R',
+}, {
+  id: 5, 
+  category: 'hand-',
+  url: 'middle-index-spread-2',
+  configuration: '3',
+}, {
+  id: 6, 
+  category: 'hand-',
+  url: 'middle-index-spread-3',
+  configuration: 'V',
+}, {
+  id: 7, 
+  category: 'hand-',
+  url: 'palm-1',
+  configuration: 'Paume pouce fermé',
+}, {
+  id: 8, 
+  category: 'hand-',
+  url: 'palm-2',
+  configuration: 'Paume pouce ouvert',
+}, {
+  id: 9, 
+  category: 'hand-',
+  url: 'palm-3',
+  configuration: 'B',
+}, {
+  id: 10, 
+  category: 'hand-',
+  url: 'palm-spread-2',
+  configuration: 'Paume écartée pouce ouvert',
+}, {
+  id: 11, 
+  category: 'hand-',
+  url: 'palm-spread-3',
+  configuration: 'Paume écartée pouce fermé',
+}, {
+  id: 12, 
+  category: 'hand-',
+  url: 'pinkie-1',
+  configuration: 'J',
+}, {
+  id: 13, 
+  category: 'hand-',
+  url: 'pinkie-3',
+  configuration: 'I',
+}, {
+  id: 14, 
+  category: 'hand-',
+  url: 'pinkie-index-3',
+  configuration: 'H',
+}, {
+  id: 15, 
+  category: 'hand-',
+  url: 'crooked-index-down-4',
+  configuration: '?',
+}, {
+  id: 16, 
+  category: 'hand-',
+  url: 'index-crooked-4',
+  configuration: 'Clé',
+}, {
+  id: 17, 
+  category: 'hand-',
+  url: 'crooked',
+  configuration: 'C',
+}, {
+  id: 19, 
+  category: 'hand-',
+  url: 'middle-index-spread-4',
+  configuration: 'K',
+}, {
+  id: 20, 
+  category: 'hand-',
+  url: 'fist-1',
+  configuration: 'A',
+}, {
+  id: 21, 
+  category: 'hand-',
+  url: 'fist-2',
+  configuration: 'Poing',
+}, {
+  id: 22, 
+  category: 'hand-',
+  url: 'crooked-index-4',
+  configuration: 'D',
+}, {
+  id: 23, 
+  category: 'hand-',
+  url: 'middle-index-1',
+  configuration: 'L pouce',
+}];
+
+
