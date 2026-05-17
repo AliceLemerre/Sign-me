@@ -8,6 +8,7 @@ import SignupPage from "./components/auth/SignupPage";
 import { StrictMode } from 'react'
 import { AuthProvider } from './context/AuthContext.tsx'
 import HomePage from './homePage.jsx'
+import AccountPage from "./components/auth/AccountPage";
 
 function App() {
     const [selectedConfigs, setSelectedConfigs] = useState([]);
@@ -20,6 +21,7 @@ function App() {
         
          <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/account" element={<PrivateRoute><AccountPage /></PrivateRoute>} />
 
        {/* <Route
           path="/formation"
