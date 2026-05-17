@@ -2,7 +2,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import './navbar.css'
+import * as styles from './navbar.css';
+import "./Navbar.css";
+
 
 interface NavbarProps {
   isOpen: boolean;
@@ -66,7 +68,7 @@ export default function Navbar({ isOpen }: NavbarProps) {
 
               {showMenu && (
                 <div className="account-menu nav-links">
-                  <Link to="/course" className="menu-item nav-link">
+                  <Link to="/account" className="menu-item nav-link">
                     Profil
                   </Link>
 

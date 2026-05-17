@@ -106,10 +106,8 @@
 }
 
 .navbar .menu-items a, .menu-items label, .menu-item {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
   font-weight: 500;
-  color: #646cff;
+  font-size: 16px;
 }
 
 .account-menu{
@@ -253,3 +251,42 @@ align-items: flex-end;}
 
 
 }
+
+/* 
+.navbar-container {
+justify-content: center;
+width: 100%;
+flex-direction: row;
+padding: 1rem;
+}
+.navbar-container .checkbox {
+background: white;
+color: blue;
+}
+.navbar .menu-items a, .menu-items label, .menu-item {
+margin-bottom: 1.2rem;
+font-size: 1.5rem;
+color: #646cff;
+font-size: 16px;
+}
+
+.open {
+width: 100%;
+justify-content: center;
+display: flex;
+align-items: center;
+gap: 3rem;
+}
+
+.menu-item {
+border-radius: 100px;
+padding: 0.4rem 1rem;
+background: none;
+border: 1px solid white;
+}
+span.line:nth-child(2) {
+background: blue;
+}
+span.line:nth-child(3) {
+background: blue;
+} */
