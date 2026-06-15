@@ -2,8 +2,8 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import * as styles from './navbar.css';
-import "./Navbar.css";
+// import * as styles from './navbar.css';
+// import "./Navbar.css";
 
 
 interface NavbarProps {
@@ -39,73 +39,40 @@ export default function Navbar({ isOpen }: NavbarProps) {
 
         {/* <div className={`menu-items nav-links ${isOpen ? "open" : ""}`}> */}
         <div className='open'>
+          <Link to="/" className="nav-link">
+                 Accueil
+              </Link>
 
           {user && (
             <>
-              <Link to="/course" className="nav-link">
+              <Link to="/exercices" className="nav-link">
                  Formation
               </Link>
 
               {/* <Link to="/course/exercise" className="nav-link">
                 Exercices
               </Link> */}
+              <Link to="/account" className="nav-link">
+                 Paramètres
+              </Link>
             </>
-            
-
-           
+             
           )}
 
           {user ? (
             <>
-            <div className="nav-dropdown">
-              <a
-                className="nav-link"
-                onClick={() => setShowMenu(!showMenu)}
-              >
-                Paramètres
-              </a>
-              
-
-              {showMenu && (
-                <div className="account-menu nav-links">
-                  <Link to="/account" className="menu-item nav-link">
-                    Profil
-                  </Link>
-
-
-                  <div className="dark-mode-div">
-                    <input
-                      type="checkbox"
-                      id="dark-mode-toggle"
-                      defaultChecked={localStorage.getItem("dark") === "true"}
-                      onChange={(e) => {
-                        localStorage.setItem("dark", String(e.target.checked));
-                        document.documentElement.classList.toggle("dark", e.target.checked);
-                      }}>
-                        
-                    </input>
-                    <label htmlFor="dark-mode-toggle" className="toggle"> </label>
-                    <p className="menu-item nav-link">Thème</p>
-
-                  </div>
-
-
-                </div>
-              )}
-              </div>
-
-              <button className="menu-item cta cta-danger logout" onClick={logout}>
+              <button className="menu-item cta cta-danger log-btn" onClick={logout}>
                 Déconnexion
               </button>
             </>
           ) : (
             <>
               <Link to="/login">
-                <button className="nav-link cta">Connexion</button>
+                <button className="nav-link cta log-btn">Connexion</button>
               </Link>
 
               <Link to="/signup">
-                <button className="nav-link cta">Inscription</button>
+                <button className="nav-link cta log-btn">Inscription</button>
               </Link>
             </>
           )}
