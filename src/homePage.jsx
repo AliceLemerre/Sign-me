@@ -25,8 +25,8 @@ function HomePage() {
     <section  className="section configurations">
       <h2>configurations</h2>
 
-      <div className="section, configuration-main">
-        <div className="hand, main-hand">
+      <div className="section configuration-main">
+        <div className="hand main-hand">
           <h3>Main dominante</h3>
           <Checkbox prefix="one"
             selectedConfigs={selectedConfigs}
@@ -34,7 +34,7 @@ function HomePage() {
           />
         </div>
 
-       <div className="hand, second-hand">
+       <div className="hand second-hand">
           <h3>Deuxième main</h3>
           <Checkbox prefix="two"
             selectedConfigs={selectedConfigsTwo}

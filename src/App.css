@@ -117,21 +117,14 @@
     color: var(--text-h);
     font-size: 16px;
     border-radius: 6px;
-    background: var(--social-bg);
     display: flex;
-    padding: 6px 12px;
+    padding: 0.4rem 0.8rem;
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    transition: box-shadow 0.3s;
+    border-radius: 100px;
+    cursor: pointer;
 
-    &:hover {
-      box-shadow: var(--shadow);
-    }
-    .button-icon {
-      height: 18px;
-      width: 18px;
-    }
   }
 
   @media (max-width: 1024px) {
@@ -212,7 +205,7 @@ input[type="checkbox"][id^="cb"] {
 label img {
   cursor: pointer;
   border-radius: 0.5rem;
-  background-color: #452573;
+  background-color: var(--accent);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -239,6 +232,16 @@ label::before {
   transform: scale(0);
 }
 
+.hand{
+  background-color: #232327;
+border-radius: 1rem;
+padding: 1rem;
+margin: 0.5rem;
+}
+
+.configurations-list{
+  margin-top: 1rem;
+}
 
 .hand-image-list-item{
   display: flex;
@@ -247,12 +250,17 @@ label::before {
   max-width: 170px;
 }
 
+.hand-image-list-item img{
+    border: 2px solid var(--accent);
+
+}
+
 input[type="checkbox"]{
   display: none;
 }
 
 .hand-image-list-item:has(input:checked) img{
-  border: 1px solid var(--accent);
+  border: 2px solid white;
 }
 
 .header{
@@ -269,6 +277,7 @@ input[type="checkbox"]{
   display: flex;
   align-items: center;
   max-width: 400px;
+  font-weight: 300;
 
 }
 
@@ -278,4 +287,13 @@ input[type="checkbox"]{
     @media(min-width: 1200px) {
     flex-direction: row;
   }
+}
+
+.cta{
+  padding: 0.4rem 0.8rem;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 100px;
+  font-family: inherit;
 }

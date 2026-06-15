@@ -77,7 +77,7 @@
   id: 15, 
   category: 'hand-',
   url: 'crooked-index-down-4',
-  configuration: '?',
+  configuration: 'Pince',
 }, {
   id: 16, 
   category: 'hand-',
@@ -112,7 +112,7 @@
   id: 23, 
   category: 'hand-',
   url: 'middle-index-1',
-  configuration: 'L pouce',
+  configuration: 'Double L',
 }];
 
 

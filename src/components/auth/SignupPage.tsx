@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-// import './Auth.css';
+import './Auth.css';
 
 
 function isValidEmail(email: string) {
@@ -10,10 +10,8 @@ function isValidEmail(email: string) {
 
 function isValidPassword(password: string) {
   return (
-    // Vérifie si mdp a plus de 6 caractères, un chiffre et au moins un caractère spécial
     password.length >= 6 &&
     /[0-9]/.test(password) &&
-    // N’importe quel caractère qui n’est PAS une lettre (A–Z, a–z) ni un chiffre (0–9)
     /[^A-Za-z0-9]/.test(password)
   );
 }
@@ -58,7 +56,7 @@ export default function SignupPage() {
 
       {errorMsg && <p style={{ color: "red" }}>{errorMsg}</p>}
 
-      <form onSubmit={handleSubmit} noValidate>
+      <form onSubmit={handleSubmit} noValidate className="auth-form">
         <label className="label-column">
           Email
           <input
@@ -77,6 +75,7 @@ export default function SignupPage() {
               value={password}
               required
               onChange={(e) => setPassword(e.target.value)}
+              className="password-input"
             />
             <button type="button" className="cta" onClick={() => setShowPassword(v => !v)}>
               {showPassword ? "Masquer" : "Voir"}
@@ -89,15 +88,14 @@ export default function SignupPage() {
         </button>
       </form>
 
-      <hr />
 
-      <button className="cta" onClick={() => loginWithOAuth("google")}>
+      {/* <button className="cta" onClick={() => loginWithOAuth("google")}>
         Continuer avec Google
       </button>
 
       <button className="cta" onClick={() => loginWithOAuth("github")}>
         Continuer avec GitHub
-      </button>
+      </button> */}
 
       <p>
         Déjà un compte ? <Link to="/login">Se connecter</Link>

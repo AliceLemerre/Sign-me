@@ -28,6 +28,7 @@ import { sign } from "./signList";
         Votre navigateur ne prend pas en charge les vidéos
       </video>
       
+  
       <p>
         <b>{signVid.word}</b>
           {/* {' ' + signVid.type + ' '} */}

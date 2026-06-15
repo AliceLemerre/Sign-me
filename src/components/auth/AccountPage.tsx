@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { supabase } from "../../lib/supabaseClient";
 import { useNavigate } from "react-router-dom";
-import "./AccountPage.css";
+import Navbar from '../navbar/Navbar'
+
 
 type Section = "email" | "password" | "delete" | null;
 
@@ -112,7 +113,13 @@ export default function AccountPage() {
   }
 
   return (
-    <div className="account-page">
+    <>      
+    <Navbar isOpen={false} onToggle={function (): void {
+        throw new Error("Function not implemented.");
+      } }/>
+
+    <div className="page-content">
+      
       <div className="account-header">
         <h1>Mon compte</h1>
         <p className="account-email">{user?.email}</p>
@@ -251,12 +258,14 @@ export default function AccountPage() {
             </div>
           )}
         </div>
+      <button className="cta logout-btn" onClick={async () => { await logout(); navigate("/"); }}>
+        déconnexion
+      </button>
 
       </div>
 
-      <button className="cta logout-btn" onClick={async () => { await logout(); navigate("/"); }}>
-        Se déconnecter
-      </button>
+
     </div>
+    </>
   );
 }
