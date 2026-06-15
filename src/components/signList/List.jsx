@@ -1,6 +1,6 @@
-import getVideoUrl from "./getVideoUrl";
-import getImageUrl from "./getImageUrl";
-import Checkbox from "./checkbox";
+import getVideoUrl from "../../helpers/getVideoUrl";
+import getImageUrl from "../../helpers/getImageUrl";
+import Checkbox from "../checkbox/checkbox";
 import { signImages } from './signImages';
 import { useState } from "react";
 import { sign } from "./signList";

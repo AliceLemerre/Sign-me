@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import {sign} from '../../components/signList';
+import {sign} from '../signList/signList';
 import Navbar from '../navbar/Navbar';
  
 const QUESTIONS_PER_ROUND = 8;

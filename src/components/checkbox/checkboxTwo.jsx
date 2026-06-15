@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import getImageUrl from "./getImageUrl";
-import { signImages } from './signImages';
+import { signImages } from '../signImages';
 import Checkbox from './checkbox';
 
 
