@@ -1,17 +1,17 @@
 import { useState } from 'react'
-import './App.css'
-import './index.css'
-import { signImages } from './components/signImages';
-import  List from './components/List.jsx'
-import Checkbox from './components/checkbox.jsx'
-import Navbar from './components/navbar/Navbar.tsx'
+import '../../App.css'
+import '../../index.css'
+import { signImages } from '../../components/signList/signImages.jsx';
+import  List from '../../components/signList/List.jsx'
+import Checkbox from '../../components/checkbox/checkbox.jsx'
+import Navbar from '../../components/navbar/Navbar.tsx'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import PrivateRoute from "./components/private-route/PrivateRoute.tsx";
-import LoginPage from "./components/auth/LoginPage.tsx";
-import SignupPage from "./components/auth/SignupPage.tsx";
+import PrivateRoute from "../../components/private-route/PrivateRoute.tsx";
+import LoginPage from "../../components/auth/LoginPage.tsx";
+import SignupPage from "../../components/auth/SignupPage.tsx";
 import { StrictMode } from 'react'
-import { AuthProvider } from './context/AuthContext.tsx'
-import Header from './components/header/Header.tsx'
+import { AuthProvider } from '../../context/AuthContext.tsx'
+import Header from '../../components/header/Header.tsx'
 
 function HomePage() {
     const [selectedConfigs, setSelectedConfigs] = useState([]);

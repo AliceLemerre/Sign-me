@@ -7,7 +7,7 @@ import LoginPage from "./components/auth/LoginPage";
 import SignupPage from "./components/auth/SignupPage";
 import { StrictMode } from 'react'
 import { AuthProvider } from './context/AuthContext.tsx'
-import HomePage from './homePage.jsx'
+import HomePage from './pages/home-page/homePage.jsx'
 import AccountPage from "./components/auth/AccountPage"
 import ExercisePage from "./components/exercices/ExercicePage.jsx"
 import "./components/exercices/ExercicePage.css"

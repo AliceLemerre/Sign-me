@@ -1,8 +1,8 @@
 import React from 'react';
-import getImageUrl from "./getImageUrl";
-import { signImages } from './signImages';
-import '../../src/App.css'
-import '../../src/index.css'
+import getImageUrl from "../../helpers/getImageUrl";
+import { signImages } from '../signList/signImages';
+import '../../App.css'
+import '../../index.css'
 
 export default function Checkbox({ selectedConfigs, setSelectedConfigs, prefix }) {
 
